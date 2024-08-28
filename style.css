@@ -3,31 +3,33 @@ body {
     color: #333333;
     background-color: #ecf1f9;
     padding: 40px 0;
-  }
-  
-  
-  
-  section,
-  header {
+}
+
+
+
+section,
+header {
     padding: 20px 60px;
-  
-  }
-  
-  
-  
-  header {
+   
+}
+
+p {
+    line-height: 1.5;
+}
+
+header {
     padding-top: 60px;
     display: flex;
-  }
-  
-  h1 {
+}
+
+
+h1 {
     font-size: 36px;
     margin-top: 0;
     margin-bottom: 5px;
-  }
+}
 
-
-  h2 {
+h2 {
     font-size: 28px;
     color: black;
 }
@@ -35,6 +37,8 @@ body {
 span {
     color: grey;
 }
+
+
 
 ul li {
     margin-bottom: 20px;
@@ -76,6 +80,59 @@ header address ul {
     border-radius: 12px;
 }
 
+.circle {
+    border-radius: 50%;
+}
+
+.big-font-size {
+    font-size: 24px;
+}
+
+.hobbies {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.hobby h3 {
+    margin-top: 5px;
+}
+
+.hobby p {
+    color: grey;
+    line-height: 1.5;
+}
+
+.hobby div {
+    margin-left: 20px;
+}
+
+.header-center-element {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.download-cv-link {
+    border: 2px solid #007ced;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+
+
+    margin-top: 40px;
+    border-radius: 20px;
+    display: inline-block;
+
+
+}
 
 .download-cv-link:visited {
     border: 2px solid grey;
@@ -85,4 +142,18 @@ header address ul {
     border: 2px solid #007ced;
     background-color: #007ced;
     color: white;
+}
+
+.download-cv-link:active {
+    text-decoration: underline;
+}
+
+.download-cv-link:hover {
+    border: 2px solid #007ced;
+    background-color: #007ced;
+    color: white;
+}
+
+.download-cv-link {
+    transition: background-color 0.5s;
 }
