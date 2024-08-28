@@ -1,16 +1,15 @@
 body {
     font-family: Arial;
     color: #333333;
-    background-color: #ecf1f9;
+    background: linear-gradient(0deg, rgba(144,194,148,1) 0%, rgba(14,117,17,0.6874027198770133) 100%);
     padding: 40px 0;
 }
-
 
 
 section,
 header {
     padding: 20px 60px;
-   
+  
 }
 
 p {
@@ -21,6 +20,7 @@ header {
     padding-top: 60px;
     display: flex;
 }
+
 
 
 h1 {
@@ -39,23 +39,30 @@ span {
 }
 
 
-
 ul li {
     margin-bottom: 20px;
 }
+
 
 .container {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     width: 960px;
-    background-color: white;
-
+    background: linear-gradient(180deg, rgba(144,194,148,1) 0%, rgba(60,196,64,0.8050497787005427) 100%);
     border-radius: 40px;
 }
+
 
 .profile-picture {
     width: 180px;
     height: 180px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+
+}
+.profile-picture:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
 }
 
 header address ul {
@@ -63,9 +70,16 @@ header address ul {
     list-style: none;
 }
 
+
 .address-line-item {
     font-size: 16px;
     margin-bottom: 15px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+.address-line-item:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
 .address-line-item-icon {
@@ -131,6 +145,9 @@ header address ul {
     border-radius: 20px;
     display: inline-block;
 
+ 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
 
 }
 
@@ -152,6 +169,7 @@ header address ul {
     border: 2px solid #007ced;
     background-color: #007ced;
     color: white;
+    
 }
 
 .download-cv-link {
