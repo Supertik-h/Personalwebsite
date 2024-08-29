@@ -1,3 +1,10 @@
+
+@keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.01); }
+    100% { transform: scale(1); }
+}
+
 body {
     font-family: Arial;
     color: #333333;
@@ -32,6 +39,7 @@ h1 {
 h2 {
     font-size: 28px;
     color: black;
+    animation: pulsate 2s infinite;
 }
 
 span {
@@ -121,7 +129,7 @@ header address ul {
 }
 
 .hobby p {
-    color: grey;
+    color: rgb(0, 0, 0);
     line-height: 1.5;
 }
 
